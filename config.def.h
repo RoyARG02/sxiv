@@ -2,8 +2,8 @@
 
 /* default window dimensions (overwritten via -g option): */
 enum {
-	WIN_WIDTH  = 800,
-	WIN_HEIGHT = 600
+	WIN_WIDTH  = 1024,
+	WIN_HEIGHT = 768
 };
 
 /* colors and font are configured with 'background', 'foreground' and
