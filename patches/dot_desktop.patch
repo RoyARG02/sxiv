@@ -1,0 +1,19 @@
+--- Makefile	2021-03-15 19:08:53.555378609 +0530
++++ Makefile	2021-03-15 19:04:17.556797560 +0530
+@@ -77,6 +77,9 @@
+ 	mkdir -p $(DESTDIR)$(PREFIX)/share/sxiv/exec
+ 	cp exec/* $(DESTDIR)$(PREFIX)/share/sxiv/exec/
+ 	chmod 755 $(DESTDIR)$(PREFIX)/share/sxiv/exec/*
++	@echo "INSTALL sxiv.desktop"
++	cp sxiv.desktop /usr/share/applications/
++	chmod 644 /usr/share/applications/sxiv.desktop
+ 
+ uninstall:
+ 	@echo "REMOVE bin/sxiv"
+@@ -85,4 +88,6 @@
+ 	rm -f $(DESTDIR)$(MANPREFIX)/man1/sxiv.1
+ 	@echo "REMOVE share/sxiv/"
+ 	rm -rf $(DESTDIR)$(PREFIX)/share/sxiv
++	@echo "REMOVE sxiv.desktop"
++	rm -f /usr/share/applications/sxiv.desktop
+ 
