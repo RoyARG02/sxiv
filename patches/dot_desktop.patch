@@ -7,7 +7,7 @@
 +	@echo "INSTALL sxiv.desktop"
 +	cp sxiv.desktop /usr/share/applications/
 +	chmod 644 /usr/share/applications/sxiv.desktop
- 
+
  uninstall:
  	@echo "REMOVE bin/sxiv"
 @@ -85,4 +88,6 @@
@@ -16,4 +16,4 @@
  	rm -rf $(DESTDIR)$(PREFIX)/share/sxiv
 +	@echo "REMOVE sxiv.desktop"
 +	rm -f /usr/share/applications/sxiv.desktop
- 
+

@@ -1,7 +1,7 @@
 --- config.def.h	2021-03-15 15:59:22.784648637 +0530
 +++ config.def.h	2021-03-15 19:32:13.637934159 +0530
 @@ -2,8 +2,8 @@
- 
+
  /* default window dimensions (overwritten via -g option): */
  enum {
 -	WIN_WIDTH  = 800,
@@ -9,5 +9,5 @@
 +	WIN_WIDTH  = 1024,
 +	WIN_HEIGHT = 768
  };
- 
+
  /* bar font:
